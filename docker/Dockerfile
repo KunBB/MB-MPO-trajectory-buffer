@@ -29,6 +29,8 @@ RUN pip install awscli
 # ALE requires zlib
 RUN apt-get -y install zlib1g-dev
 # MUJOCO requires graphics stuff (Why?)
+RUN sed -Ei 's/^# deb-src /deb-src /' /etc/apt/sources.list
+RUN apt-get update
 RUN apt-get -y build-dep glfw
 RUN apt-get -y install libxrandr2 libxinerama-dev libxi6 libxcursor-dev
 # copied from requirements.txt
@@ -49,6 +51,8 @@ CMD alias ffmpeg="avconv"
 # ========== Add codebase stub ==========
 CMD mkdir /root/code
 ADD environment.yml /root/code/environment.yml
+RUN conda install numpy
+Run conda upgrade conda
 RUN conda env create -f /root/code/environment.yml
 
 ENV PYTHONPATH /root/code/rllab:$PYTHONPATH

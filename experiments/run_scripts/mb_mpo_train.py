@@ -12,7 +12,7 @@ from experiments.helpers.ec2_helpers import cheapest_subnets
 from experiments.helpers.run_multi_gpu import run_multi_gpu
 
 from sandbox.ours.envs.own_envs import PointEnvMAML
-from sandbox.ours.envs.mujoco import AntEnvRandParams, HalfCheetahEnvRandParams, HopperEnvRandParams, SwimmerEnvRandParams, WalkerEnvRandomParams
+from sandbox.ours.envs.mujoco import AntEnvRandParams, HalfCheetahEnvRandParams, HopperEnvRandParams, SwimmerEnvRandParams, WalkerEnvRandomParams, PR2EnvRandParams
 from sandbox.ours.envs.mujoco import Reacher5DofEnvRandParams
 
 
@@ -102,16 +102,17 @@ def run_experiment(argv):
     # -------------------- Define Variants -----------------------------------
     vg = VariantGenerator()
 
-    vg.add('seed', [22, 33, 12])
+    vg.add('seed', [127])#[22, 56, 97])
 
     # env spec
-    vg.add('env', ['HalfCheetahEnvRandParams', 'AntEnvRandParams', 'WalkerEnvRandomParams',
-                   'SwimmerEnvRandParams', 'HopperEnvRandParams', 'PR2EnvRandParams'])
+    vg.add('env', ['HalfCheetahEnvRandParams'])
+    #vg.add('env', ['HalfCheetahEnvRandParams', 'AntEnvRandParams', 'WalkerEnvRandomParams',
+    #               'SwimmerEnvRandParams', 'HopperEnvRandParams', 'PR2EnvRandParams'])
     vg.add('log_scale_limit', [0.0])
     vg.add('path_length_env', [200])
 
     # Model-based MAML algo spec
-    vg.add('n_itr', [100])
+    vg.add('n_itr', [44])
     vg.add('fast_lr', [0.001])
     vg.add('meta_step_size', [0.01])
     vg.add('meta_batch_size', [20]) # must be a multiple of num_models

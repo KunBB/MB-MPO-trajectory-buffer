@@ -1,0 +1,108 @@
+--------------------------------------------------------------------------
+[[63579,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: e7362568f5f1
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+[[64456,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: e7362568f5f1
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+[32musing seed 97[0m
+2019-05-13 04:15:57.791345 UTC | Setting seed to 98
+2019-05-13 04:15:57.791393 UTC | Setting seed to 99
+2019-05-13 04:15:57.791282 UTC | Setting seed to 97
+2019-05-13 04:15:57.791465 UTC | Setting seed to 100
+2019-05-13 04:15:57.791689 UTC | Setting seed to 104
+2019-05-13 04:15:57.791653 UTC | Setting seed to 102
+2019-05-13 04:15:57.791622 UTC | Setting seed to 101
+2019-05-13 04:15:57.791789 UTC | Setting seed to 103
+2019-05-13 04:15:57.791913 UTC | Setting seed to 105
+2019-05-13 04:15:57.792085 UTC | Setting seed to 106
+2019-05-13 04:15:57.793222 UTC | Setting seed to 107
+2019-05-13 04:15:57.793293 UTC | Setting seed to 108
+Logging to /home/ubuntu/model_ensemble_meta_learning/data/local/mb-mpo/model_ensemble_maml_train_env_PR2EnvRandParams_200_5_1_97_id_218
+2019-05-13 04:17:21.147477 UTC | [model_ensemble_maml_train_env_PR2EnvRandParams_200_5_1_97_id_218] itr #0 | Obtaining random samples from the environment...
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+Warning: No valid output stream.
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+proxy resets!
+2019-05-13 04:17:23.594027 UTC | [model_ensemble_maml_train_env_PR2EnvRandParams_200_5_1_97_id_218] itr #0 | Evaluating the performance of the real policy
+2019-05-13 04:17:23.594191 UTC | [model_ensemble_maml_train_env_PR2EnvRandParams_200_5_1_97_id_218] itr #0 | Obtaining samples for iteration 0...
+[32musing seed 104[0m
+[32musing seed 98[0m
+[32musing seed 99[0m
+[32musing seed 97[0m
+[32musing seed 100[0m
+[32musing seed 102[0m
+[32musing seed 103[0m
+[32musing seed 101[0m
+Not executing the pre_commands:  ["yes | pip install tensorflow=='1.6.0'", 'pip list', 'yes | pip install --upgrade cloudpickle'] , nor post_commands:  None
+python3 /home/ubuntu/model_ensemble_meta_learning/scripts/run_experiment_lite.py  --n_parallel '12'  --snapshot_mode 'gap'  --snapshot_gap '5'  --seed '97'  --exp_name 'model_ensemble_maml_train_env_PR2EnvRandParams_200_5_1_97_id_218'  --log_dir '/home/ubuntu/model_ensemble_meta_learning/data/local/mb-mpo/model_ensemble_maml_train_env_PR2EnvRandParams_200_5_1_97_id_218'  --use_cloudpickle 'True'  --args_data 'gASVVAgAAAAAAACMF2Nsb3VkcGlja2xlLmNsb3VkcGlja2xllIwOX2ZpbGxfZnVuY3Rpb26Uk5QoaACMD19tYWtlX3NrZWxfZnVuY5STlGgAjA1fYnVpbHRpbl90eXBllJOUjAhDb2RlVHlwZZSFlFKUKEsBSwBLBksbS0NCKgEAAHQAdAF8AGQBGQB8AGQCGQBkA40BgwGDAX0BdAJkBHwBagN8AGQFGQB8AGQGGQB8AGQHGQB8AGQIGQB8AGQJGQB8AGQKGQBkC40IfQJ0BGQMfAFqA3wAZA0ZAHwAZA4ZAHwAZA8ZAHwAZBAZAHwAZBEZAHwAZBIZAGQTjQh9A3QFfAFqA2QUjQF9BHQGfAF8A3wCfAR8AGQVGQB8AGQVGQB8AGQWGQB8AGQXGQB8AGQYGQB8AGQZGQB8AGQaGQB8AGoHZBtkHIMCfABkHRkAfABqB2QeZACDAnwAagdkH2QsgwJ8AGQhGQB8AGQiGQBkI3wAZCQZAHwAZCUZAHwAZCYZAHwAagdkJ2QogwJkKXwAagdkKmQpgwJkK40YfQV8BWoIgwABAGQAUwCUKE6MA2VudpSMD2xvZ19zY2FsZV9saW1pdJRoDIWUjAlkeW5fbW9kZWyUjBJoaWRkZW5fc2l6ZXNfbW9kZWyUjBp3ZWlnaHRfbm9ybWFsaXphdGlvbl9tb2RlbJSMCm51bV9tb2RlbHOUjA9vcHRpbWl6ZXJfbW9kZWyUjBF2YWxpZF9zcGxpdF9yYXRpb5SMGnJvbGxpbmdfYXZlcmFnZV9wZXJzaXRlbmN5lCiMBG5hbWWUjAhlbnZfc3BlY5SMDGhpZGRlbl9zaXplc5SMFHdlaWdodF9ub3JtYWxpemF0aW9ulGgRjAlvcHRpbWl6ZXKUaBNoFHSUjAZwb2xpY3mUjBNoaWRkZW5fc2l6ZXNfcG9saWN5lIwaaGlkZGVuX25vbmxpbmVhcml0eV9wb2xpY3mUjAdmYXN0X2xylIwTdHJhaW5hYmxlX3N0ZXBfc2l6ZZSMDmJpYXNfdHJhbnNmb3JtlIwPcGFyYW1fbm9pc2Vfc3RklChoFWgWaBeME2hpZGRlbl9ub25saW5lYXJpdHmUjA5ncmFkX3N0ZXBfc2l6ZZRoH2ggaCF0lGgWhZSMBW5faXRylIwWYmF0Y2hfc2l6ZV9lbnZfc2FtcGxlc5SMG2JhdGNoX3NpemVfZHluYW1pY3Nfc2FtcGxlc5SMD21ldGFfYmF0Y2hfc2l6ZZSMFmluaXRpYWxfcmFuZG9tX3NhbXBsZXOUjBdudW1fbWFtbF9zdGVwc19wZXJfaXRlcpSME3Jlc2V0X2Zyb21fZW52X3RyYWqUiYwPcGF0aF9sZW5ndGhfZW52lIwPcGF0aF9sZW5ndGhfZHlulIwYZHluYW1pY19tb2RlbF9tYXhfZXBvY2hzlE30AYwIZGlzY291bnSUjA5tZXRhX3N0ZXBfc2l6ZZRLAYwjcmV0cmFpbl9tb2RlbF93aGVuX3Jld2FyZF9kZWNyZWFzZXOUjBByZXNldF9wb2xpY3lfc3RklIwScmVpbml0X21vZGVsX2N5Y2xllIwIZnJhY19ncHWURz/rMzMzMzMziIwIY2xpcF9vYnOUKGgLaBuMDmR5bmFtaWNzX21vZGVslIwIYmFzZWxpbmWUaCaMBm5faXRlcpRoJ2goaCloKmgraCyME21heF9wYXRoX2xlbmd0aF9lbnaUjBNtYXhfcGF0aF9sZW5ndGhfZHlulGgvaDCMCXN0ZXBfc2l6ZZSMEG51bV9ncmFkX3VwZGF0ZXOUaDJoM2g0aDWMFGxvZ19yZWFsX3BlcmZvcm1hbmNllGg2dJRN9AFN9AGGlHSUKIwFVGZFbnaUjAlub3JtYWxpemWUjBNNTFBEeW5hbWljc0Vuc2VtYmxllIwEc3BlY5SMHU1BTUxJbXByb3ZlZEdhdXNzaWFuTUxQUG9saWN5lIwVTGluZWFyRmVhdHVyZUJhc2VsaW5llIwNTW9kZWxNQU1MVFJQT5SMA2dldJSMBXRyYWlulHSUKIwCdnaUaAtoN2gbaDiMBGFsZ2+UdJSMJ2V4cGVyaW1lbnRzL3J1bl9zY3JpcHRzL21iX21wb190cmFpbi5weZSMDnJ1bl90cmFpbl90YXNrlEsgQ1wAAhoCAgECAQQBBgEGAQYBBgEGAQwDAgECAQQBBgEGAQYBBgEGAQwDDAICAQIBAgECAQIBBgEGAQYBBgEGAQYBBgEKAQYBCgEKAQYBBgECAQYBBgEGAQoBAgEQApQpKXSUUpRK/////4wIX19tYWluX1+Uh5RSlH2UKIwHZ2xvYmFsc5R9lChoRow0c2FuZGJveC5vdXJzLnBvbGljaWVzLm1hbWxfaW1wcm92ZWRfZ2F1c3NfbWxwX3BvbGljeZRoRpOUaEOMIHNhbmRib3gub3Vycy5lbnZzLm5vcm1hbGl6ZWRfZW52lIwNTm9ybWFsaXplZEVudpSTlGhHjCxybGxhYl9tYW1sLmJhc2VsaW5lcy5saW5lYXJfZmVhdHVyZV9iYXNlbGluZZRoR5OUaESMJ3NhbmRib3gub3Vycy5keW5hbWljcy5keW5hbWljc19lbnNlbWJsZZRoRJOUaEKMFnNhbmRib3gub3Vycy5lbnZzLmJhc2WUaEKTlGhIjCxzYW5kYm94Lm91cnMuYWxnb3MuTW9kZWxNQU1MLm1vZGVsX21hbWxfdHJwb5RoSJOUdYwIZGVmYXVsdHOUTowEZGljdJR9lIwOY2xvc3VyZV92YWx1ZXOUTowGbW9kdWxllGhUaBVoUIwDZG9jlE6MCHF1YWxuYW1llGhQdXRSLg=='  --variant_data 'gANjcmxsYWIubWlzYy5pbnN0cnVtZW50ClZhcmlhbnREaWN0CnEAKYFxAShYBAAAAHNlZWRxAkthWAMAAABlbnZxA2NzYW5kYm94Lm91cnMuZW52cy5tdWpvY28ucHIyX2Vudl9yYW5kb21fcGFyYW0KUFIyRW52UmFuZFBhcmFtcwpxBFgPAAAAbG9nX3NjYWxlX2xpbWl0cQVHAAAAAAAAAABYDwAAAHBhdGhfbGVuZ3RoX2VudnEGS8hYBQAAAG5faXRycQdLLFgHAAAAZmFzdF9scnEIRz9QYk3S8an8WA4AAABtZXRhX3N0ZXBfc2l6ZXEJRz+EeuFHrhR7WA8AAABtZXRhX2JhdGNoX3NpemVxCksUWAgAAABkaXNjb3VudHELRz/vrhR64UeuWBYAAABiYXRjaF9zaXplX2Vudl9zYW1wbGVzcQxLAVgbAAAAYmF0Y2hfc2l6ZV9keW5hbWljc19zYW1wbGVzcQ1LMlgWAAAAaW5pdGlhbF9yYW5kb21fc2FtcGxlc3EOTYgTWBcAAABudW1fbWFtbF9zdGVwc19wZXJfaXRlcnEPSx5YIwAAAHJldHJhaW5fbW9kZWxfd2hlbl9yZXdhcmRfZGVjcmVhc2VzcRCJWBMAAAByZXNldF9mcm9tX2Vudl90cmFqcRGJWBMAAAB0cmFpbmFibGVfc3RlcF9zaXplcRKJWAoAAABudW1fbW9kZWxzcRNLBVgaAAAAaGlkZGVuX25vbmxpbmVhcml0eV9wb2xpY3lxFGN0ZW5zb3JmbG93LnB5dGhvbi5vcHMubWF0aF9vcHMKdGFuaApxFVgZAAAAaGlkZGVuX25vbmxpbmVhcml0eV9tb2RlbHEWY3RlbnNvcmZsb3cucHl0aG9uLm9wcy5nZW5fbm5fb3BzCnJlbHUKcRdYEwAAAGhpZGRlbl9zaXplc19wb2xpY3lxGEsgSyCGcRlYEgAAAGhpZGRlbl9zaXplc19tb2RlbHEaTQACTQAChnEbWBoAAAB3ZWlnaHRfbm9ybWFsaXphdGlvbl9tb2RlbHEciFgQAAAAcmVzZXRfcG9saWN5X3N0ZHEdiVgSAAAAcmVpbml0X21vZGVsX2N5Y2xlcR5LAFgPAAAAb3B0aW1pemVyX21vZGVscR9jdGVuc29yZmxvdy5weXRob24udHJhaW5pbmcuYWRhbQpBZGFtT3B0aW1pemVyCnEgWAYAAABwb2xpY3lxIVgdAAAATUFNTEltcHJvdmVkR2F1c3NpYW5NTFBQb2xpY3lxIlgOAAAAYmlhc190cmFuc2Zvcm1xI4lYDwAAAHBhcmFtX25vaXNlX3N0ZHEkRwAAAAAAAAAAWBgAAABkeW5hbWljX21vZGVsX21heF9lcG9jaHNxJU30AU30AYZxJlgRAAAAdmFsaWRfc3BsaXRfcmF0aW9xJ0c/yZmZmZmZmlgaAAAAcm9sbGluZ19hdmVyYWdlX3BlcnNpdGVuY3lxKEc/764UeuFHrlgKAAAAZXhwX3ByZWZpeHEpWAYAAABtYi1tcG9xKlgMAAAAX2hpZGRlbl9rZXlzcStdcSxYCAAAAGV4cF9uYW1lcS1YQAAAAG1vZGVsX2Vuc2VtYmxlX21hbWxfdHJhaW5fZW52X1BSMkVudlJhbmRQYXJhbXNfMjAwXzVfMV85N19pZF8yMThxLnVoAWIu'

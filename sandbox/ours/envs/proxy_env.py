@@ -11,6 +11,8 @@ class ProxyEnv(Env, Serializable):
         return self._wrapped_env
 
     def reset(self, *args, **kwargs):
+        #print("proxy resets!",args,kwargs)
+        #print("proxy resets func: ",self._wrapped_env.reset)
         return self._wrapped_env.reset(*args, **kwargs)
 
     @property

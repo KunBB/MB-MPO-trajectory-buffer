@@ -17,6 +17,8 @@ class MAMLVectorizedSampler(MAMLBaseSampler):
         super(MAMLVectorizedSampler, self).__init__(algo)
         self.n_envs = n_envs
         self.n_tasks = n_tasks
+        self.init_state_list=[]# Jiannan
+        self.list_frac = 0.5 # Jiannan
 
     def start_worker(self):
         n_envs = self.n_envs
@@ -54,6 +56,17 @@ class MAMLVectorizedSampler(MAMLBaseSampler):
         assert self.vec_env.num_envs % self.n_tasks == 0
 
         n_envs_per_task = self.vec_env.num_envs // self.n_tasks
+        init_state = None
+        # Jiannan start
+        if len(self.init_state_list)>0:
+            print (len(self.init_state_list))
+            #for itt in range(len(self.reset_args_list)):
+            #    print(self.reset_args_list[itt])
+            init_state = self.init_state_list[int((len(self.init_state_list)-1)*self.list_frac)] # Jiannan
+            self.init_state_list=[]#Jiannan
+        # Jiannan end
+
+
 
         # if the reset args are not list/numpy, we set the same args for each env
         if reset_args is not None and (type(reset_args) != list and type(reset_args)!=np.ndarray):
@@ -67,7 +80,10 @@ class MAMLVectorizedSampler(MAMLBaseSampler):
             raise AssertionError("reset args must not be none")
 
         n_samples = 0
-        obses = self.vec_env.reset(reset_args)
+        obses = self.vec_env.reset(reset_args,init_state) # original
+        self.init_state_list.append(obses) # Jiannan
+        #print("check point: obs added to list in 'Obtaining samples for iteration ' phase")
+
         dones = np.asarray([True] * self.vec_env.num_envs)
         running_paths = [None] * self.vec_env.num_envs
 
@@ -90,6 +106,25 @@ class MAMLVectorizedSampler(MAMLBaseSampler):
             policy_time += time.time() - t
             t = time.time()
             next_obses, rewards, dones, env_infos = self.vec_env.step(actions, reset_args)
+#             print(self.vec_env.envs[0])
+#             print("checkpoint!!!!!")
+#             print("reset_args",reset_args)
+
+#             print("checkpoint!!!!!")
+#             print("next_obses",next_obses)
+
+#             print("checkpoint!!!!!")
+#             print("rewards",rewards)
+
+#             print("checkpoint!!!!!")
+#             print("dones",dones)
+
+#             print("checkpoint!!!!!")
+#             print("env_infos",env_infos)
+
+            self.init_state_list.append(next_obses) # Jiannan
+            #print("check point: obs added to list in 'n_samples ' phase ",n_samples)# Jiannan
+
             env_time += time.time() - t
 
             t = time.time()

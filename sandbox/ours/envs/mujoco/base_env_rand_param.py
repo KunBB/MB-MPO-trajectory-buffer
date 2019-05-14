@@ -51,7 +51,7 @@ class BaseEnvRandParams(Serializable):
         Serializable.__init__(*args_all, **kwargs_all)
 
     @overrides
-    def reset(self, init_state=None, reset_args=None, **kwargs):
+    def reset(self, reset_args=None, init_state=None, **kwargs):
         """
         resets the environment and returns the initial observation
         :param init_state: initial state -> joint angles
@@ -60,7 +60,10 @@ class BaseEnvRandParams(Serializable):
         :return: initial observation
         """
         assert reset_args is None or type(reset_args) == dict, "reset_args must be a dict containing mujoco model params"
-
+        #print("resets here!")
+        #print("reset:",reset_args)
+        #print("init_state",init_state)
+        #print("end")
         self.time_step = 1
         # reset number of steps taken
         self.n_steps = 0
